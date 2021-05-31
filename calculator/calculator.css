@@ -1,0 +1,55 @@
+#content-wrapper {
+    background-color: black ;
+    width: 800px;
+    height: 800px;
+    position: relative;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    border: 5px solid red;
+
+}
+
+#result-container {
+    background-color: lightpink;
+    width: 100%;
+    height: 15%;
+    font-size: 80px;
+    border-bottom: 5px solid red;
+    font-family:'Lucida Sans', Verdana, sans-serif;
+}
+
+#number-output {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 80px;
+    text-align: right;
+}
+
+#gameBoard {
+    width: 100%;
+    height: 85%;
+}
+
+
+.boardRow {
+    display: flex;
+    width: 100%;
+    height: 16.90%;
+}
+
+.tile {
+    width: 25%;
+    background-color: yellowgreen;
+    border: 1px solid blue;
+    font-size: 40px;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+.tile:hover {
+    background-color: rgb(202, 173, 41);
+}

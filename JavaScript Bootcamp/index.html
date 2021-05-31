@@ -1,0 +1,91 @@
+<!--src = source html - markup language; javascript - cripting language-->
+
+ <html>
+    <head> 
+        <title>Lesson 6</title>
+         <script src="lesson_6.js"></script> 
+         <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+         <style> 
+
+             body, html {
+                 background-color: rgb(125, 160, 111);
+             }
+
+             #content-wrapper {  
+                 background-color: #345734;
+                 width: 50%;
+                 height: 50%;
+                 position: relative;
+                 left: 50%;
+                 top: 50%;
+                 transform: translate(-50%, -50%); 
+                 border: 1px solid #0f2403;
+             }
+
+             #time-container {
+                 font-size: 90px;
+                 color: chartreuse;
+                 border-bottom: 1px solid #0f2403;
+                 font-family: 'Orbitron', sans-serif;
+             }
+             #time {
+                margin: 0 auto;
+                width: 75%;
+             }
+
+             .button-container {
+                display: flex; /*to get logic in future for buttons*/
+                justify-content: center; /*woulnt work without display flex */
+             }
+             .buttons {
+                 background-color:orange;
+                padding: 6px;
+                width: 130px;
+                font-size: 25px;
+                margin-top: 5px;
+                margin-right: 5px;
+                font-family: 'Orbitron', sans-serif;
+                outline: none;
+                border: 1px solid red; 
+                border-radius: 4px;
+                
+
+             }
+
+             .buttons:hover {
+                 background-color: sandybrown;
+             }
+
+             .buttons:active {
+                 background-color: rgb(95, 43, 19);
+             }
+
+             #select-box:active {
+                background-color: cadetblue;
+             }
+
+         </style>
+    </head>
+
+    <body>
+        <div id='content-wrapper'>  <!--block element-->
+            <div id='time-container'> 
+                 <div id='time'>00:00:00</div>
+            </div>
+
+            <div class='button-container'> <!--class is for many objects, but id only for one object-->
+                <button id='start-stop-button' class='buttons' onclick="startStop()">Start</button>
+                <button id='reset-button' class='buttons' onclick="resetTimer()">Reset</button>
+                <select id='select-box' class='buttons' onchange='changeColor()'> 
+                    <option value='#d9ad2b'>Gold</option>
+                    <option value='#00ff00'>Green</option>
+                    <option value='#ff0000'>Red</option>
+                    <option value='#ffffff'>White</option>
+                    <option value='#000000'>Black</option>
+                    <option value='random'>Random</option>
+                </select>
+            </div>
+        </div>
+    </body>
+</html>
+

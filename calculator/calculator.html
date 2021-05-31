@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <!--<script src=timer.js></script>-->
+        <link href='calculator.css' rel='stylesheet' type='text/css'/>
+    </head>
+
+    <body>
+
+        <div id='content-wrapper'>
+            <div id='result-container'>
+                <input id='number-output' type='number' placeholder="Result"/>
+            </div>
+
+            <div id='button-container'>
+                <div class='boardRow'>
+                    <button style="background: blueviolet;" id='b00' class='tile' onclick='doSmtg(0, 0)'>9</button>
+                    <button style="background: lightcoral;"id='b10' class='tile' onclick='doSmtg(1, 0)'>C</button>
+                    <button style="background: lightcoral;"id='b20' class='tile' onclick='doSmtg(2, 0)'>=</button>
+                    <button id='b20' class='tile' onclick='doSmtg(3, 0)'>+</button>
+               </div> <!--class is common styling for more elements-->
+               <div class='boardRow'>
+                   <button style="background: blueviolet;" id='b01' class='tile' onclick='doSmtg(0, 1)'>6</button>
+                   <button style="background: blueviolet;" id='b11' class='tile' onclick='doSmtg(1, 1)'>7</button>
+                   <button style="background: blueviolet;" id='b21' class='tile' onclick='doSmtg(2, 1)'>8</button>
+                   <button id='b21' class='tile' onclick='doSmtg(3, 1)'>-</button>
+               </div>
+               <div class='boardRow'>
+                   <button style="background: blueviolet;" id='b02' class='tile' onclick='doSmtg(0, 2)'>5</button>
+                   <button style="background: blueviolet;" id='b12' class='tile' onclick='doSmtg(1, 2)'>4</button>
+                   <button style="background: blueviolet;" id='b22' class='tile' onclick='doSmtg(2, 2)'>3</button>
+                   <button id='b22' class='tile' onclick='addSmtg(3, 2)'>*</button>
+               </div>
+               <div class='boardRow'>
+                    <button style="background: blueviolet;" id='b02' class='tile' onclick='doSmtg(0, 3)'>0</button>
+                    <button style="background: blueviolet;" id='b12' class='tile' onclick='doSmtg(1, 3)'>1</button>
+                    <button style="background: blueviolet;" id='b22' class='tile' onclick='doSmtg(2, 3)'>2</button>
+                    <button id='b22' class='tile' onclick='doSmtg(3, 3)'>/</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src=calculator.js></script>
+    </body>
+
+</html>

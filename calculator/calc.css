@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#calculator {
+    width: 15%;
+    height: 43%;
+    border: 1px solid black;
+    position: relative;
+    top: -10%;
+    user-select: none;
+}
+
+#result {
+    width: 90%;
+    height: 15%;
+    border: 1px solid black;
+    margin: 0 auto; /* puts in center */
+    margin-top: 15px;
+    /*text-align: right; /* only good for horizontaly*/
+    padding-right: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* good for horizontaly and verticaly*/
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px red inset;
+
+
+}
+
+#buttons {
+    width: 90%;
+    margin: 0 auto;
+    height: 50%;
+    margin-top: 10px;
+
+}
+
+button {
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 5px 10px yellow inset;
+}
+
+button:hover {
+    background-color: violet;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}

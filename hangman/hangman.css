@@ -1,0 +1,49 @@
+.container {
+    width: 100%;
+}
+
+
+#top {
+    height: 15%;
+    font-family: Cambria, Cochin, Georgia, serif;
+    font-size: 90px;
+    text-align: center;
+    color: crimson;
+}
+
+#top:hover {color: darkmagenta;}
+
+#mid {
+    height: 35%;
+    text-align: center;
+}
+
+
+#bot {
+    height: 50%;
+
+}
+
+.letterContainer {
+    width: 100%;
+    height: 125px;
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.letterContainer:hover {background-color: burlywood;}
+
+.guessWord {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+
+
+}
